@@ -1,11 +1,27 @@
-# Your GitHub Learning Lab Repository for Community Starter Kit
+# Kung Fu Xiangqi
 
-Welcome to **your** repository for your GitHub Learning Lab course. This repository will be used during the different activities that I will be guiding you through to learn about making your project friendlier for collaboration.
+"Kung Fu Chess" reimagined for Chinese chess (Xiangqi). This repository currently
+contains a pure-Python engine that models real-time play by giving every piece
+its own cooldown after moving. It focuses on accurate Xiangqi movement rules so
+that you can experiment with fast-paced variants, bots, or simulations.
 
-Oh! I haven't introduced myself...
+## Features
 
-I'm the GitHub Learning Lab bot and I'm here to help guide you in your journey to learn and master the various topics covered in this course. I will be using Issue and Pull Request comments to communicate with you. In fact, I already added a pull request for you to check out.
+- Full board representation with standard Xiangqi starting position.
+- Rule enforcement for all pieces including horses with blocked legs and
+  cannons that must jump to capture.
+- General face-off detection and self-check prevention to keep moves legal.
+- Real-time `Game` manager that tracks a global clock and per-piece cooldowns.
+- Simple example script (`examples/quickstart.py`) demonstrating how to drive
+the engine.
 
-![issue tab](https://lab.github.com/public/images/issue_tab.png)
+## Getting Started
 
-I'll meet you over there, can't wait to get started!
+This project targets Python 3.10+. Run the quick start example directly:
+
+```bash
+python examples/quickstart.py
+```
+
+Feel free to build on top of the `Game` class to add networking, graphical
+interfaces, or AI opponents for a full Kung Fu Xiangqi experience.
